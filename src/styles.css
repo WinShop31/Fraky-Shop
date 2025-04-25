@@ -1,0 +1,83 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+  background-size: 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Анимация фона */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Шапка */
+header {
+  padding: 2rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Lobster', cursive; /* Подключите шрифт через Google Fonts */
+}
+
+/* Основной контент */
+main {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.maintenance h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.apology {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #ff6b6b, #4ecdc4, #45b7d1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: textShine 3s linear infinite;
+}
+
+/* Анимация переливающегося текста */
+@keyframes textShine {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+/* Футер */
+footer {
+  padding: 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
