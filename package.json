@@ -1,0 +1,13 @@
+{
+  "name": "fraky-shop",
+  "version": "1.0.0",
+  "description": "Fraky Shop maintenance page",
+  "scripts": {
+    "start": "serve src",
+    "build": "cp -r src/* dist/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
